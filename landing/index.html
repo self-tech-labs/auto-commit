@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="AutoCommit is a testnet prototype for goals with real consequences: set a one-day target, stake test tokens, and let phone evidence settle the outcome."
+      content="AutoCommit is a testnet prototype for self smart-contracts: verifiable personal goals, private phone evidence, and enforceable onchain outcomes."
     />
-    <title>AutoCommit - Goals with consequences</title>
+    <title>AutoCommit - Self smart-contracts</title>
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312110f'/%3E%3Ccircle cx='32' cy='32' r='15' fill='%23ff5a1f'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23fffdfa'/%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080a09'/%3E%3Cpath d='M18 35c8-18 20-18 28 0' fill='none' stroke='%23b8ff6a' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='35' r='7' fill='%23fffaf0'/%3E%3C/svg%3E"
     />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./script.js"></script>
@@ -19,68 +19,88 @@
     <header class="topbar" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="AutoCommit home">AutoCommit</a>
       <nav class="nav-links" aria-label="Page sections">
-        <a href="#logic">Logic</a>
-        <a href="#uses">Uses</a>
-        <a href="https://github.com/self-tech-labs/auto-commit">Repo</a>
+        <a href="#protocol">Protocol</a>
+        <a href="#uses">Use cases</a>
+        <a href="#trust">Trust</a>
+        <a href="https://github.com/self-tech-labs/auto-commit">GitHub</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <canvas id="commitment-canvas" aria-hidden="true"></canvas>
+        <canvas id="protocol-canvas" aria-hidden="true"></canvas>
         <div class="hero-shade" aria-hidden="true"></div>
 
         <div class="hero-content" data-reveal>
-          <p class="eyebrow">Base Sepolia prototype</p>
+          <p class="eyebrow">Testnet self-technology</p>
           <h1 id="hero-title">AutoCommit</h1>
-          <p class="tagline">Goals with consequences.</p>
-          <p class="lede">Stake test tokens on a day your phone can prove.</p>
+          <p class="tagline">Self smart-contracts for better days.</p>
+          <p class="lede">Put a health intention onchain. Keep the proof on your phone. Let escrow enforce the result.</p>
           <div class="actions" aria-label="Primary actions">
-            <a class="button button-primary" href="https://github.com/self-tech-labs/auto-commit">Explore repo</a>
-            <a class="button button-secondary" href="https://github.com/self-tech-labs/auto-commit/blob/main/docs/ARCHITECTURE.md">See logic</a>
+            <a class="button button-primary" href="https://github.com/self-tech-labs/auto-commit">Explore prototype</a>
+            <a class="button button-secondary" href="https://github.com/self-tech-labs/auto-commit/blob/main/docs/ARCHITECTURE.md">Read architecture</a>
           </div>
         </div>
 
-        <ol class="hero-path" aria-label="AutoCommit flow" data-reveal>
+        <ol class="hero-path" aria-label="AutoCommit behavior loop" data-reveal>
           <li>
             <span>01</span>
-            Set goal
+            Intention
           </li>
           <li>
             <span>02</span>
-            Lock stake
+            Escrow
           </li>
           <li>
             <span>03</span>
-            Phone proves
+            Evidence
           </li>
           <li>
             <span>04</span>
-            Escrow settles
+            Reinforcement
           </li>
         </ol>
       </section>
 
-      <section class="logic section" id="logic">
+      <section class="manifesto section" aria-labelledby="manifesto-title">
+        <div class="inner manifesto-layout">
+          <div data-reveal>
+            <p class="section-kicker">Thesis</p>
+            <h2 id="manifesto-title">The next self-improvement tool may look less like an app, more like a contract.</h2>
+          </div>
+          <p class="manifesto-copy" data-reveal>
+            AutoCommit explores a behaviorist loop for wellbeing: commit, measure, settle, repeat. Positive reinforcement becomes programmable without exposing raw health data.
+          </p>
+        </div>
+      </section>
+
+      <section class="protocol section" id="protocol">
         <div class="inner">
-          <p class="section-kicker" data-reveal>Logic</p>
-          <h2 data-reveal>Private proof. Public outcome.</h2>
-          <div class="logic-grid" data-reveal>
+          <div class="section-head" data-reveal>
+            <p class="section-kicker">Protocol</p>
+            <h2>A private proof becomes a public consequence.</h2>
+          </div>
+
+          <div class="protocol-grid" data-reveal>
             <article>
-              <h3>Promise</h3>
-              <p>One clear target.</p>
+              <span>Declare</span>
+              <h3>Choose the day</h3>
+              <p>One goal. One window. No vague streaks.</p>
             </article>
             <article>
-              <h3>Stake</h3>
-              <p>Money makes it real.</p>
+              <span>Lock</span>
+              <h3>Escrow the stake</h3>
+              <p>Value creates a behavioral gradient.</p>
             </article>
             <article>
-              <h3>Proof</h3>
-              <p>iPhone checks the day.</p>
+              <span>Verify</span>
+              <h3>Submit phone evidence</h3>
+              <p>Steps or Screen Time, checked after the window.</p>
             </article>
             <article>
-              <h3>Outcome</h3>
-              <p>Contract moves funds.</p>
+              <span>Settle</span>
+              <h3>Reinforce the result</h3>
+              <p>The contract releases or redirects the funds.</p>
             </article>
           </div>
         </div>
@@ -89,40 +109,44 @@
       <section class="uses section" id="uses">
         <div class="inner">
           <div class="section-head" data-reveal>
-            <p class="section-kicker">Use cases</p>
-            <h2>Small promises. Real stakes.</h2>
+            <p class="section-kicker">Applications</p>
+            <h2>Self-contracts for high-leverage health moments.</h2>
           </div>
 
           <div class="use-grid">
+            <article class="use-case use-movement" data-reveal>
+              <div class="case-visual" aria-hidden="true"></div>
+              <p class="case-label">Movement</p>
+              <h3>Walk the threshold.</h3>
+              <p>Let HealthKit verify the steps before settlement.</p>
+            </article>
             <article class="use-case use-focus" data-reveal>
               <div class="case-visual" aria-hidden="true"></div>
-              <h3>Less scrolling</h3>
-              <p>Hit a Screen Time limit or pay the consequence.</p>
+              <p class="case-label">Attention</p>
+              <h3>Reduce the feed.</h3>
+              <p>Turn Screen Time limits into enforceable commitments.</p>
             </article>
-            <article class="use-case use-steps" data-reveal>
+            <article class="use-case use-reset" data-reveal>
               <div class="case-visual" aria-hidden="true"></div>
-              <h3>More movement</h3>
-              <p>Let HealthKit verify the steps.</p>
-            </article>
-            <article class="use-case use-deadline" data-reveal>
-              <div class="case-visual" aria-hidden="true"></div>
-              <h3>One-day sprints</h3>
-              <p>Make tomorrow harder to ignore.</p>
+              <p class="case-label">Daily reset</p>
+              <h3>Make one day count.</h3>
+              <p>Short commitments with explicit deadlines and outcomes.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="proof section">
-        <div class="inner proof-layout">
+      <section class="trust section" id="trust">
+        <div class="inner trust-layout">
           <div data-reveal>
             <p class="section-kicker">Trust model</p>
-            <h2>Built for the gap between phone data and money.</h2>
+            <h2>Designed for health data that should stay private.</h2>
           </div>
-          <div class="proof-list" data-reveal>
-            <p><strong>Device evidence</strong><span>Screen Time or steps.</span></p>
-            <p><strong>Worker oracle</strong><span>Checks proof, signs outcome.</span></p>
-            <p><strong>Escrow contract</strong><span>Holds and settles the stake.</span></p>
+          <div class="trust-list" data-reveal>
+            <p><strong>iOS evidence</strong><span>Local steps or Screen Time outcome.</span></p>
+            <p><strong>Worker oracle</strong><span>Validates proofs and signs settlement.</span></p>
+            <p><strong>ERC20 escrow</strong><span>Holds the stake and enforces role-gated outcomes.</span></p>
+            <p><strong>Testnet first</strong><span>Not mainnet-ready financial software.</span></p>
           </div>
         </div>
       </section>
@@ -130,9 +154,9 @@
       <section class="final section" aria-labelledby="final-title">
         <div class="inner final-layout" data-reveal>
           <p class="section-kicker">Open prototype</p>
-          <h2 id="final-title">Fork the accountability engine.</h2>
-          <p>iOS app. Cloudflare Worker. ERC20 escrow. No mainnet claims.</p>
-          <a class="button button-dark" href="https://github.com/self-tech-labs/auto-commit">Start building</a>
+          <h2 id="final-title">A scaffold for personal enforcement protocols.</h2>
+          <p>iOS app. Cloudflare Worker. Base Sepolia escrow.</p>
+          <a class="button button-dark" href="https://github.com/self-tech-labs/auto-commit">Fork the protocol</a>
         </div>
       </section>
     </main>
