@@ -26,6 +26,9 @@ that directory as the site root when changes land on `main`.
 
 In the repository settings, set Pages source to **GitHub Actions**.
 
+There is also a root `index.html` redirect so branch-based Pages deployments
+serve the landing page instead of rendering this README.
+
 ## Current Status
 
 - Chain default: Base Sepolia.
