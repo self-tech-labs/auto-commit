@@ -1,0 +1,12 @@
+{
+  "name": "autocommit-contracts",
+  "private": true,
+  "version": "0.1.0",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  },
+  "scripts": {
+    "test": "forge test",
+    "build": "forge build"
+  }
+}

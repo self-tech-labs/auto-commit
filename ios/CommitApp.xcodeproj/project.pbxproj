@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010000000000000000000001 /* CommitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000001 /* CommitApp.swift */; };
+		010000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000002 /* ContentView.swift */; };
+		010000000000000000000003 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000003 /* AppConfiguration.swift */; };
+		010000000000000000000004 /* ActivityNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000004 /* ActivityNames.swift */; };
+		010000000000000000000005 /* CommitmentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000005 /* CommitmentModels.swift */; };
+		010000000000000000000006 /* Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000006 /* Hashing.swift */; };
+		010000000000000000000007 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000007 /* APIClient.swift */; };
+		010000000000000000000008 /* SharedFailureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000008 /* SharedFailureStore.swift */; };
+		010000000000000000000009 /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000009 /* WalletService.swift */; };
+		01000000000000000000000A /* HealthKitGoalVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000A /* HealthKitGoalVerifier.swift */; };
+		01000000000000000000000B /* ScreenTimeGoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000B /* ScreenTimeGoalController.swift */; };
+		01000000000000000000000C /* CommitmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000C /* CommitmentViewModel.swift */; };
+		01000000000000000000000D /* CommitActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000D /* CommitActivityMonitorExtension.swift */; };
+		01000000000000000000000E /* ActivityNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000004 /* ActivityNames.swift */; };
+		01000000000000000000000F /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000003 /* AppConfiguration.swift */; };
+		010000000000000000000010 /* SharedFailureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000008 /* SharedFailureStore.swift */; };
+		010000000000000000000011 /* CommitActivityMonitor.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000F /* CommitActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		030000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 060000000000000000000002;
+			remoteInfo = CommitActivityMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		040000000000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				010000000000000000000011 /* CommitActivityMonitor.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		020000000000000000000001 /* CommitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitApp.swift; sourceTree = "<group>"; };
+		020000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		020000000000000000000003 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		020000000000000000000004 /* ActivityNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityNames.swift; sourceTree = "<group>"; };
+		020000000000000000000005 /* CommitmentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitmentModels.swift; sourceTree = "<group>"; };
+		020000000000000000000006 /* Hashing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashing.swift; sourceTree = "<group>"; };
+		020000000000000000000007 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		020000000000000000000008 /* SharedFailureStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFailureStore.swift; sourceTree = "<group>"; };
+		020000000000000000000009 /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
+		02000000000000000000000A /* HealthKitGoalVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitGoalVerifier.swift; sourceTree = "<group>"; };
+		02000000000000000000000B /* ScreenTimeGoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeGoalController.swift; sourceTree = "<group>"; };
+		02000000000000000000000C /* CommitmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitmentViewModel.swift; sourceTree = "<group>"; };
+		02000000000000000000000D /* CommitActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		02000000000000000000000E /* Commit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02000000000000000000000F /* CommitActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CommitActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		020000000000000000000010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		020000000000000000000011 /* CommitActivityMonitor Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		020000000000000000000012 /* CommitApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommitApp.entitlements; sourceTree = "<group>"; };
+		020000000000000000000013 /* CommitActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommitActivityMonitor.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		050000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				070000000000000000000002 /* CommitApp */,
+				070000000000000000000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		070000000000000000000002 /* CommitApp */ = {
+			isa = PBXGroup;
+			children = (
+				070000000000000000000003 /* Sources */,
+				070000000000000000000004 /* Resources */,
+				070000000000000000000005 /* CommitActivityMonitor */,
+				020000000000000000000012 /* CommitApp.entitlements */,
+			);
+			path = CommitApp;
+			sourceTree = "<group>";
+		};
+		070000000000000000000003 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				020000000000000000000001 /* CommitApp.swift */,
+				020000000000000000000002 /* ContentView.swift */,
+				020000000000000000000003 /* AppConfiguration.swift */,
+				020000000000000000000004 /* ActivityNames.swift */,
+				020000000000000000000005 /* CommitmentModels.swift */,
+				020000000000000000000006 /* Hashing.swift */,
+				020000000000000000000007 /* APIClient.swift */,
+				020000000000000000000008 /* SharedFailureStore.swift */,
+				020000000000000000000009 /* WalletService.swift */,
+				02000000000000000000000A /* HealthKitGoalVerifier.swift */,
+				02000000000000000000000B /* ScreenTimeGoalController.swift */,
+				02000000000000000000000C /* CommitmentViewModel.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		070000000000000000000004 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				020000000000000000000010 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		070000000000000000000005 /* CommitActivityMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				02000000000000000000000D /* CommitActivityMonitorExtension.swift */,
+				020000000000000000000011 /* CommitActivityMonitor Info.plist */,
+				020000000000000000000013 /* CommitActivityMonitor.entitlements */,
+			);
+			path = CommitActivityMonitor;
+			sourceTree = "<group>";
+		};
+		070000000000000000000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02000000000000000000000E /* Commit.app */,
+				02000000000000000000000F /* CommitActivityMonitor.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		060000000000000000000001 /* Commit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 080000000000000000000002 /* Build configuration list for PBXNativeTarget "Commit" */;
+			buildPhases = (
+				0A0000000000000000000001 /* Sources */,
+				050000000000000000000001 /* Frameworks */,
+				0B0000000000000000000001 /* Resources */,
+				040000000000000000000001 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = Commit;
+			productName = Commit;
+			productReference = 02000000000000000000000E /* Commit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		060000000000000000000002 /* CommitActivityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 080000000000000000000005 /* Build configuration list for PBXNativeTarget "CommitActivityMonitor" */;
+			buildPhases = (
+				0A0000000000000000000002 /* Sources */,
+				050000000000000000000002 /* Frameworks */,
+				0B0000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommitActivityMonitor;
+			productName = CommitActivityMonitor;
+			productReference = 02000000000000000000000F /* CommitActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					060000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					060000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 080000000000000000000001 /* Build configuration list for PBXProject "CommitApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 070000000000000000000001;
+			productRefGroup = 070000000000000000000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				060000000000000000000001 /* Commit */,
+				060000000000000000000002 /* CommitActivityMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B0000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B0000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A0000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010000000000000000000001 /* CommitApp.swift in Sources */,
+				010000000000000000000002 /* ContentView.swift in Sources */,
+				010000000000000000000003 /* AppConfiguration.swift in Sources */,
+				010000000000000000000004 /* ActivityNames.swift in Sources */,
+				010000000000000000000005 /* CommitmentModels.swift in Sources */,
+				010000000000000000000006 /* Hashing.swift in Sources */,
+				010000000000000000000007 /* APIClient.swift in Sources */,
+				010000000000000000000008 /* SharedFailureStore.swift in Sources */,
+				010000000000000000000009 /* WalletService.swift in Sources */,
+				01000000000000000000000A /* HealthKitGoalVerifier.swift in Sources */,
+				01000000000000000000000B /* ScreenTimeGoalController.swift in Sources */,
+				01000000000000000000000C /* CommitmentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01000000000000000000000D /* CommitActivityMonitorExtension.swift in Sources */,
+				01000000000000000000000E /* ActivityNames.swift in Sources */,
+				01000000000000000000000F /* AppConfiguration.swift in Sources */,
+				010000000000000000000010 /* SharedFailureStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C0000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 060000000000000000000002 /* CommitActivityMonitor */;
+			targetProxy = 030000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		080000000000000000000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		080000000000000000000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		080000000000000000000012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CommitApp/CommitApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CommitApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autocommit.beta;
+				PRODUCT_NAME = Commit;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		080000000000000000000013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CommitApp/CommitApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CommitApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autocommit.beta;
+				PRODUCT_NAME = Commit;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		080000000000000000000014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = CommitApp/CommitActivityMonitor/CommitActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CommitApp/CommitActivityMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autocommit.beta.CommitActivityMonitor;
+				PRODUCT_NAME = CommitActivityMonitor;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		080000000000000000000015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = CommitApp/CommitActivityMonitor/CommitActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CommitApp/CommitActivityMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.autocommit.beta.CommitActivityMonitor;
+				PRODUCT_NAME = CommitActivityMonitor;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		080000000000000000000001 /* Build configuration list for PBXProject "CommitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				080000000000000000000010 /* Debug */,
+				080000000000000000000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		080000000000000000000002 /* Build configuration list for PBXNativeTarget "Commit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				080000000000000000000012 /* Debug */,
+				080000000000000000000013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		080000000000000000000005 /* Build configuration list for PBXNativeTarget "CommitActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				080000000000000000000014 /* Debug */,
+				080000000000000000000015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090000000000000000000001 /* Project object */;
+}

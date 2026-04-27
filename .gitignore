@@ -1,0 +1,24 @@
+.DS_Store
+
+# Node / Cloudflare
+node_modules/
+.wrangler/
+.dev.vars
+dist/
+coverage/
+
+# Foundry
+contracts/cache/
+contracts/broadcast/
+contracts/out/
+contracts/lib/
+
+# Xcode
+DerivedData/
+*.xcuserdata/
+*.xcuserstate
+
+# Local secrets
+.env
+.env.*
+!.env.example

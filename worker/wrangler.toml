@@ -1,0 +1,15 @@
+name = "autocommit-worker"
+main = "src/index.ts"
+compatibility_date = "2025-12-01"
+
+[vars]
+APP_ATTEST_MODE = "disabled"
+CHAIN_ID = "84532"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "autocommit-beta"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[triggers]
+crons = ["*/15 * * * *"]
