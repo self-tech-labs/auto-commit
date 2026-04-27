@@ -16,7 +16,15 @@ production hardening items in [Architecture](docs/ARCHITECTURE.md) and
 - `contracts`: Foundry project for the escrow contract and contract tests.
 - `worker`: Cloudflare Worker API, D1 schema, funding verification, proof intake,
   and settlement scheduler.
+- `landing`: static GitHub Pages landing page for a broader audience.
 - `docs`: architecture, operations, and launch/compliance guardrails.
+
+## Landing Page
+
+The static landing page lives in `landing/`. The GitHub Pages workflow publishes
+that directory as the site root when changes land on `main`.
+
+In the repository settings, set Pages source to **GitHub Actions**.
 
 ## Current Status
 

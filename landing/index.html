@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AutoCommit is a testnet prototype for goals with real consequences: set a one-day target, stake test tokens, and let phone evidence settle the outcome."
+    />
+    <title>AutoCommit - Goals with consequences</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312110f'/%3E%3Ccircle cx='32' cy='32' r='15' fill='%23ff5a1f'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23fffdfa'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="AutoCommit home">AutoCommit</a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#logic">Logic</a>
+        <a href="#uses">Uses</a>
+        <a href="https://github.com/self-tech-labs/auto-commit">Repo</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="commitment-canvas" aria-hidden="true"></canvas>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-content" data-reveal>
+          <p class="eyebrow">Base Sepolia prototype</p>
+          <h1 id="hero-title">AutoCommit</h1>
+          <p class="tagline">Goals with consequences.</p>
+          <p class="lede">Stake test tokens on a day your phone can prove.</p>
+          <div class="actions" aria-label="Primary actions">
+            <a class="button button-primary" href="https://github.com/self-tech-labs/auto-commit">Explore repo</a>
+            <a class="button button-secondary" href="https://github.com/self-tech-labs/auto-commit/blob/main/docs/ARCHITECTURE.md">See logic</a>
+          </div>
+        </div>
+
+        <ol class="hero-path" aria-label="AutoCommit flow" data-reveal>
+          <li>
+            <span>01</span>
+            Set goal
+          </li>
+          <li>
+            <span>02</span>
+            Lock stake
+          </li>
+          <li>
+            <span>03</span>
+            Phone proves
+          </li>
+          <li>
+            <span>04</span>
+            Escrow settles
+          </li>
+        </ol>
+      </section>
+
+      <section class="logic section" id="logic">
+        <div class="inner">
+          <p class="section-kicker" data-reveal>Logic</p>
+          <h2 data-reveal>Private proof. Public outcome.</h2>
+          <div class="logic-grid" data-reveal>
+            <article>
+              <h3>Promise</h3>
+              <p>One clear target.</p>
+            </article>
+            <article>
+              <h3>Stake</h3>
+              <p>Money makes it real.</p>
+            </article>
+            <article>
+              <h3>Proof</h3>
+              <p>iPhone checks the day.</p>
+            </article>
+            <article>
+              <h3>Outcome</h3>
+              <p>Contract moves funds.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="uses section" id="uses">
+        <div class="inner">
+          <div class="section-head" data-reveal>
+            <p class="section-kicker">Use cases</p>
+            <h2>Small promises. Real stakes.</h2>
+          </div>
+
+          <div class="use-grid">
+            <article class="use-case use-focus" data-reveal>
+              <div class="case-visual" aria-hidden="true"></div>
+              <h3>Less scrolling</h3>
+              <p>Hit a Screen Time limit or pay the consequence.</p>
+            </article>
+            <article class="use-case use-steps" data-reveal>
+              <div class="case-visual" aria-hidden="true"></div>
+              <h3>More movement</h3>
+              <p>Let HealthKit verify the steps.</p>
+            </article>
+            <article class="use-case use-deadline" data-reveal>
+              <div class="case-visual" aria-hidden="true"></div>
+              <h3>One-day sprints</h3>
+              <p>Make tomorrow harder to ignore.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof section">
+        <div class="inner proof-layout">
+          <div data-reveal>
+            <p class="section-kicker">Trust model</p>
+            <h2>Built for the gap between phone data and money.</h2>
+          </div>
+          <div class="proof-list" data-reveal>
+            <p><strong>Device evidence</strong><span>Screen Time or steps.</span></p>
+            <p><strong>Worker oracle</strong><span>Checks proof, signs outcome.</span></p>
+            <p><strong>Escrow contract</strong><span>Holds and settles the stake.</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="final section" aria-labelledby="final-title">
+        <div class="inner final-layout" data-reveal>
+          <p class="section-kicker">Open prototype</p>
+          <h2 id="final-title">Fork the accountability engine.</h2>
+          <p>iOS app. Cloudflare Worker. ERC20 escrow. No mainnet claims.</p>
+          <a class="button button-dark" href="https://github.com/self-tech-labs/auto-commit">Start building</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
